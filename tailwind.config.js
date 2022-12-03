@@ -12,7 +12,9 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                'primary': '#3267fa'
+                'primary': '#3267fa',
+                'darkerpblue': '#191926',
+                'darkerppblue': '#151521'
             },
             fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
@@ -20,5 +22,8 @@ module.exports = {
         },
     },
 
-    plugins: [require('@tailwindcss/forms')],
+    plugins: [
+        require('@tailwindcss/forms'),
+        require('daisyui')
+    ],
 };
