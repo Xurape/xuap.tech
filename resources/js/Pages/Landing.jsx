@@ -7,6 +7,9 @@ export default function Landing({...props}) {
         <>
             <Head title="Landing" />
             <Topbar />
+            <div className="content">
+                This website is currently being made, hold a little more time :)
+            </div>
         </>
     )
 }

@@ -4,5 +4,31 @@
 
 body {
     @apply transition-all ease-in-out duration-300
-    bg-gray-900 text-gray-400;
+    bg-darkerpblue text-gray-400 font-['Ubuntu'];
+}
+
+/* Topbar */
+
+.topbar {
+    @apply top-0 py-2 bg-darkerppblue drop-shadow-sm w-full -z-10 border-b-2 border-b-blue-500 border-opacity-50 hover:border-opacity-75 transition duration-500;
+}
+
+.topbar .topcontent {
+    @apply flex justify-center;
+    @apply tracking-widest text-xs
+    hover:text-gray-300 transition duration-500 cursor-pointer;
+}  
+
+.topbar .topcontent > svg {
+    @apply ml-1 mt-[0.11rem];
+}
+
+.topbar .topcontent span {
+    @apply text-gray-200;
+}
+
+/* Content */
+
+.content {
+    @apply flex m-6 h-screen w-screen overflow-y-hidden overflow-x-hidden text-gray-400;
 }
